@@ -27,6 +27,6 @@ func main(){
     array[i] = i
   }
 
-  fmt.Printf("%d\n", array)
+  fmt.Printf("%v\n", array)
 
 }
