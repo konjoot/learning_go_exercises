@@ -20,4 +20,14 @@ func main(){
   strr[6] = 'c'
   str = string(strr)
   fmt.Printf("%s\n", str)
+
+  str = "foobar"
+  str_slice := make([]rune, len(str))
+
+  for pos, char := range str {
+    str_slice[len(str) - pos - 1] = char
+  }
+
+  fmt.Printf("%s\n", string(str_slice))
+
 }
